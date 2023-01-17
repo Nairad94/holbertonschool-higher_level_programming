@@ -8,5 +8,5 @@ if number % 10 == 0:
 if number % 10 < 6 and number % 10 != 0 and number > 0:
   print(f"Last digit of {number} is {number % 10} and is less than 6 and not 0")
 if number < 0:
-  numberpositive = number * -1
-  print(f"Last digit of {number} is {numberpositive % 10 * -1} and is less than 6 and not 0")
+  numberpos = number * -1
+  print(f"Last digit of {number} is {numberpos % 10 * -1} and is less than 6 and not 0")
