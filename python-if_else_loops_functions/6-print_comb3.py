@@ -8,5 +8,4 @@ for n in range(10):
         if n < 9 and i != 1:
             print(", ", end="")
         print("{}{}".format(n, i), end="")
-        if n == 8 and i == 9:
-            print("\n")
+print()
