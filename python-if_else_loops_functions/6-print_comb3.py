@@ -7,6 +7,6 @@ for n in range(10):
             continue
         if n < 9 and i != 1:
             print(", ", end="")
-            if n == 8 and i == 9:
-                print("89\n")
         print("{}{}".format(n, i), end="")
+        if n == 8 and i == 9:
+            print("\n")
