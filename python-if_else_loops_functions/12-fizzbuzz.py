@@ -8,7 +8,7 @@ for n in range(1, 101):
         print("Buzz", end="")
     else:
         print(n, end="")
-    if n < 100:
+    if n < 101:
         print(" ", end="")
     if n == 100:
         print()
