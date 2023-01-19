@@ -11,5 +11,5 @@ def fizzbuzz():
             print(n, end="")
         if n < 101:
             print(" ", end="")
-        if n == 100:
+        if n == 101:
             print()
