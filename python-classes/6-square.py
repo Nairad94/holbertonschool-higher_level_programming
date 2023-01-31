@@ -8,6 +8,11 @@ class Square:
         self.__size = __size
         self.__position = __position
 
+        if (self.__position[0] < 0 or self.__position[1] < 0):
+            raise TypeError("must be a tuple of 2 positive integers")
+        if (type(self.__position[0] or self.__position[1])) != int:
+            raise TypeError("must be a tuple of 2 positive integers")
+
     """ area of a square """
     def area(self):
         area = self.__size * self.__size
