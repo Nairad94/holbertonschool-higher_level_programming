@@ -25,6 +25,9 @@ class Square:
     def my_print(self):
         x = 0
         y = 0
+        if (self.__size == 0):
+            print()
+            return
         for p1 in range(self.__position[1]):
             print()
         for x in range(self.__size):
@@ -33,8 +36,6 @@ class Square:
             for y in range(self.__size - 1):
                 print("#", end="")
             print("#")
-        if (self.__size == 0):
-            print()
     """ Devolver un atributo de propiedad """
     @property
     def size(self):
