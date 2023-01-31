@@ -38,7 +38,7 @@ class Square:
 
     @property
     def position(self):
-        return self.position
+        return self.__position
     """ permite establecer o mutar el valor de un atributo en una clase """
     @size.setter
     def size(self, value):
