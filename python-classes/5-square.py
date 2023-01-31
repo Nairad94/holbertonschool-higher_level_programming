@@ -10,7 +10,7 @@ class Square:
     def area(self):
         area = self.__size * self.__size
         return area
-    """ Print a square """    
+    """ Print a square """
     def my_print(self):
         x = 0
         y = 0
@@ -32,4 +32,3 @@ class Square:
         if (value < 0):
             raise ValueError("size must be >= 0")
         self.__size = value
-    
