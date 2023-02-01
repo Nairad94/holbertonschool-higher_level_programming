@@ -1,3 +1,4 @@
+>>> add_integer = __import__('0-add_integer').add_integer
 """
 Simple Test
 """
@@ -11,6 +12,10 @@ def add_integer(a, b):
 >>> print(add_integer(100.3, -2))
 98
 >>> print(add_integer(4, "School"))
+Traceback (most recent call last):
+    ...
 b must be an integer
 >>> print(add_integer(None))
+Traceback (most recent call last):
+    ...
 a must be an integer
