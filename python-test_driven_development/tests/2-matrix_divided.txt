@@ -1,6 +1,6 @@
-The matrix_divided module
+The matrix_divided
 """
-Using the ``matrix_divided`` module
+Simple Test
 """
 
 >>> matrix_divided = matrix_divided = __import__('2-matrix_divided').matrix_divided
