@@ -19,12 +19,15 @@ Simple Test
 
 >>> add_integer(4, "School")
 Traceback (most recent call last):
+...
 TypeError: b must be an integer
 
->>> add_integer(NaN)
+>>> add_integer(float('NaN'))
 Traceback (most recent call last):
-TypeError: a must be an integer
+...
+ValueError: cannot convert float NaN to integer
 
->>> add_integer(float("inf"))
+>>> add_integer(float('NaN'))
 Traceback (most recent call last):
-OverflowError: cannot convert float infinity to integer
+...
+ValueError: cannot convert float NaN to integer
