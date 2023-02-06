@@ -16,3 +16,7 @@ def text_indentation(text):
             print()
         else:
             print(char, end="")
+# .split: permite dividir una cadena de texto en una lista de subcadenas,
+# utilizando un separador especificado.
+# .strip: permite eliminar los caracteres iniciales y finales de una cadena
+# de texto que sean espacios en blanco o caracteres específicos
