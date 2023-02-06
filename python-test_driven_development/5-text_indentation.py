@@ -9,7 +9,7 @@ def text_indentation(text):
     text1 = ".".join([substring.strip() for substring in text.split(".")])
     text2 = ":".join([substring.strip() for substring in text1.split(":")])
     text3 = "?".join([substring.strip() for substring in text2.split("?")])
-    
+
     for char in text3:
         if (char == '.' or char == '?' or char == ':'):
             print(char)
