@@ -14,6 +14,9 @@ task 4 In the following code, do a and b point to the same object? Answer with Y
 task 5 In the following code, do a and b point to the same object? Answer with Yes or No.
 
 task 6 What do these 3 lines print?
+>>> s1 = "Best School"
+>>> s2 = s1
+>>> print(s1 == s2)
 
 task 7 What do these 3 lines print?
 
