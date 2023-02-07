@@ -16,3 +16,9 @@ Simple Test
 ... 
 [Exception] area() is not implemented
 
+>>> try:
+...     bg.integer_validator("name", "John")
+... except Exception as e:
+class__.__name__, e))...     print("[{}] {}".format(e.__class__.__name__, e))
+... 
+[TypeError] name must be an integer
