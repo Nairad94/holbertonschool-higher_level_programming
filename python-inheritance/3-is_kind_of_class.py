@@ -1,3 +1,7 @@
+#!/usr/bin/python3
+""" Write a function that returns True otherwise False """
+
+
 def is_kind_of_class(obj, a_class):
     """ True if the object is an instance or is an instance of /
     a class that inherited from, the specified class, otherwise False """
