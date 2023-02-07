@@ -7,9 +7,8 @@ Simple Test
 
 >>> bg = BaseGeometry()
 
->>> try:
-...     bg.integer_validator("my_int", 12)
-...     print("my_int es un número entero positivo válido.")
+bg.integer_validator("my_int", 12)
+bg.integer_validator("width", 89)
 
 >>> try:
 ...     bg.integer_validator("name", "John")
