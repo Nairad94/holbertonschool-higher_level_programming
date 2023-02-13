@@ -12,8 +12,5 @@ class Estudiante:
         self.age = age
 
     def to_json(self):
-        return {
-            self.first_name,
-            self.last_name,
-            self.age
-            }
+        """ devuelve un diccionario que representa los atributos de un objeto """
+        return self.__dict__
