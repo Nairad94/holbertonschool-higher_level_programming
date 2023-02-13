@@ -32,22 +32,22 @@ class Rectangle(Base):
         """ getter """
         return self.__y
 
-    @height.setter
-    def __height(self, value):
+    @__height.setter
+    def height(self, value):
         """ setter """
         self.height = value
 
-    @width.setter
-    def __width(self, value):
+    @__width.setter
+    def width(self, value):
         """ setter """
         self.width = value
 
-    @x.setter
-    def __x(self, value):
+    @__x.setter
+    def x(self, value):
         """ setter """
         self.x = value
 
-    @y.setter
-    def __y(self, value):
+    @__y.setter
+    def y(self, value):
         """ setter """
         self.y = value
