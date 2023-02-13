@@ -6,19 +6,19 @@ from models.base import Base
 class Rectangle(Base):
     """defines an initialization method """
     def __init__(self, width, height, x=0, y=0, id=None):
-        self.__width = width
-        self.__height = height
+        self.width = width
+        self.height = height
         self.__x = x
         self.__y = y
         super().__init__(id)
 
     @property
-    def __width(self):
+    def width(self):
         """ getter """
         return self.__width
 
     @property
-    def __height(self):
+    def height(self):
         """ getter """
         return self.__height
 
@@ -32,12 +32,12 @@ class Rectangle(Base):
         """ getter """
         return self.__y
 
-    @__height.setter
+    @height.setter
     def height(self, value):
         """ setter """
         self.height = value
 
-    @__width.setter
+    @width.setter
     def width(self, value):
         """ setter """
         self.width = value
