@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """ Método de inicialización que se llama al/
  crear una instancia de la clase Estudiante """
-class Estudiante:
+class Student:
 
 
     def __init__(self, first_name, last_name, age):
