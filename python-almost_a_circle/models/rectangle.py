@@ -6,10 +6,10 @@ from models.base import Base
 class Rectangle(Base):
     """defines an initialization method """
     def __init__(self, width, height, x=0, y=0, id=None):
-        self.__width = width
-        self.__height = height
-        self.__x = x
-        self.__y = y
+        self.width = width
+        self.height = height
+        self.x = x
+        self.y = y
         super().__init__(id)
 
     @property
@@ -23,31 +23,31 @@ class Rectangle(Base):
         return self.__height
 
     @property
-    def __x(self):
+    def x(self):
         """ getter """
         return self.__x
 
     @property
-    def __y(self):
+    def y(self):
         """ getter """
         return self.__y
 
     @height.setter
     def height(self, value):
         """ setter """
-        self.height = value
+        self.__height = value
 
     @width.setter
     def width(self, value):
         """ setter """
-        self.width = value
+        self.__width = value
 
-    @__x.setter
+    @x.setter
     def x(self, value):
         """ setter """
-        self.x = value
+        self.__x = value
 
-    @__y.setter
+    @y.setter
     def y(self, value):
         """ setter """
-        self.y = value
+        self.__y = value
