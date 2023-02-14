@@ -90,9 +90,7 @@ class Rectangle(Base):
 
     def area(self):
         """ function that calculates the area """
-        width = self.__width
-        heigth = self.__height
-        return width * heigth
+        return self.__width * self.__heigth
 
     def display(self):
         """ function that print rectangle with the character # """
