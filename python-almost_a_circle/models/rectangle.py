@@ -11,25 +11,25 @@ class Rectangle(Base):
         if width <= 0:
             raise ValueError("width must be > 0")
         else:
-            self.width = width
+            self.__width = width
         if type(height) != int:
             raise TypeError("height must be an integer")
         if height <= 0:
             raise ValueError("height must be > 0")
         else:
-            self.height = height
+            self.__height = height
         if type(x) != int:
             raise TypeError("x must be an integer")
         if x < 0:
             raise ValueError("x must be >= 0")
         else:
-            self.x = x
+            self.__x = x
         if type(y) != int:
             raise TypeError("y must be an integer")
         if y < 0:
             raise ValueError("y must be >= 0")
         else:
-            self.y = y
+            self.__y = y
         super().__init__(id)
 
     @property
@@ -101,4 +101,4 @@ class Rectangle(Base):
 
     def __str__(self):
         """ method so that it returns [Rectangle] """
-        return (f"[Rectangle] ({self.id}) {self.x}/{self.y} - {self.width}/{self.heigth}")
+        return (f"[Rectangle] ({self.id}) {self.x}/{self.y} - {self.width}/{self.height}")
