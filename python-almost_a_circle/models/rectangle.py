@@ -102,3 +102,4 @@ class Rectangle(Base):
         for n in range(heigth):
             for i in range(width):
                 print("#", end="")
+            print()
