@@ -96,11 +96,11 @@ class Rectangle(Base):
 
     def display(self):
         """ function that print rectangle with the character # """
-        width = self.__width
-        heigth = self.__height
-        for n in range(heigth):
-            for i in range(width):
+        for n in range(self.heigth):
+            for i in range(self.width):
                 print("#", end="")
             print()
+
     def __str__(self):
+        """ method so that it returns [Rectangle] """
         return (f"[Rectangle] ({self.id}) {self.x}/{self.y} - {self.width}/{self.heigth}")
