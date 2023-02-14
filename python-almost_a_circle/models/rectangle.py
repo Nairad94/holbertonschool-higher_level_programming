@@ -98,7 +98,6 @@ class Rectangle(Base):
         """ function that print rectangle with the character # """
         width = self.__width
         heigth = self.__height
-        
         for n in range(heigth):
             for i in range(width):
                 print("#", end="")
