@@ -91,7 +91,7 @@ class Rectangle(Base):
         y = self.y
         return (f"[Rectangle] ({self.id}) {x}/{y} - {width}/{height}")
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """ update argument order """
         if len(args) > 0:
             self.id = args[0]
@@ -103,3 +103,7 @@ class Rectangle(Base):
             self.x = args[3]
         if len(args) > 4:
             self.y = args[4]
+        else:
+            for key, value in kwargs.items():
+                setattr(self, key, value)
+        # establece el valor de un atributo de un objeto en tiempo de ejecución
