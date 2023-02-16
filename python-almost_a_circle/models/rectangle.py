@@ -6,30 +6,10 @@ from models.base import Base
 class Rectangle(Base):
     """defines an initialization method """
     def __init__(self, width, height, x=0, y=0, id=None):
-        if type(width) != int:
-            raise TypeError("width must be an integer")
-        if width <= 0:
-            raise ValueError("width must be > 0")
-        else:
-            self.__width = width
-        if type(height) != int:
-            raise TypeError("height must be an integer")
-        if height <= 0:
-            raise ValueError("height must be > 0")
-        else:
-            self.__height = height
-        if type(x) != int:
-            raise TypeError("x must be an integer")
-        if x < 0:
-            raise ValueError("x must be >= 0")
-        else:
-            self.__x = x
-        if type(y) != int:
-            raise TypeError("y must be an integer")
-        if y < 0:
-            raise ValueError("y must be >= 0")
-        else:
-            self.__y = y
+        self.width = width
+        self.height = height
+        self.x = x
+        self.y = y
         super().__init__(id)
 
     @property
@@ -90,19 +70,23 @@ class Rectangle(Base):
 
     def area(self):
         """ function that calculates the area """
-        return self.__width * self.__heigth
+        return self.__width * self.__height
 
     def display(self):
         """ function that print rectangle with the character # """
-        for n in range(self.heigth):
-            for i in range(self.width):
+        for j in range(self.__y):
+            print()
+        for n in range(self.__height):
+            for m in range(self.__x):
+                print(" ", end="")
+            for i in range(self.__width):
                 print("#", end="")
             print()
 
     def __str__(self):
         """ method so that it returns [Rectangle] """
-        width = self.__width
-        height = self.__height
-        x = self.__x
-        y = self.__y
+        width = self.width
+        height = self.height
+        x = self.x
+        y = self.y
         return (f"[Rectangle] ({self.id}) {x}/{y} - {width}/{height}")
