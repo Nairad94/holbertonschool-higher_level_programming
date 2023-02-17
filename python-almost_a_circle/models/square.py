@@ -39,3 +39,6 @@ class Square(Rectangle):
             for i in range(self.size):
                 print("#", end="")
             print()
+
+    def update(self, *args, **kwargs):
+        return super().update(*args, **kwargs)
