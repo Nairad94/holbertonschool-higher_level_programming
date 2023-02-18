@@ -108,12 +108,12 @@ class Rectangle(Base):
                 setattr(self, key, value)
         # establece el valor de un atributo de un objeto en tiempo de ejecución
 
-        def to_dictionary(self):
-            """ Returns the values of the rectangle in a dictionay """
-            return {
-                "id": self.id,
-                "width": self.__width,
-                "height": self.__height,
-                "x": self.__x,
-                "y": self.__y
-                }
+    def to_dictionary(self):
+        """ dictionary with keys and values """
+        return {
+            "id": self.id,
+            "width": self.width,
+            "height": self.height,
+            "x": self.x,
+            "y": self.y
+            }
