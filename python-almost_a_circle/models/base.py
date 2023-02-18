@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """ Define the start of the class """
+import json
+import os
 
 
 class Base:
@@ -23,7 +25,7 @@ class Base:
 
     @classmethod
     def save_to_file(cls, list_objs):
-        """ writes the JSON string representation to file """
+        """ writes the JSON string representation of list_objs to file """
         if list_objs is None:
             dict_objs = []
         else:
@@ -33,7 +35,7 @@ class Base:
 
     @staticmethod
     def from_json_string(json_string):
-        """ returns the list of the JSON representation """
+        """ returns the list of the JSON representation json_string """
         if json_string is None or len(json_string) == 0:
             return []
         return json.loads(json_string)
