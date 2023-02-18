@@ -53,12 +53,13 @@ class Base:
     @classmethod
     def load_from_file(cls):
         """ returns a list of instances """
-        filename = cls.__name__ + ".json"
-        instance_list = []
-        try:
-            with open(filename, 'r') as file:
-                jsonstring = cls.from_json_string(file.read())
-                for obj_dict in jsonstring:
-                    instance_list.append(cls.create(**obj_dict))
-        except FileNotFoundError:
-            return instance_list
+        filename = f"{cls.__name__}.json"
+        if not os.path.isfile(filename):
+            return []
+        with open(filename, mode='r', encoding='utf-8') as f:
+            json_string = f.read()
+            list_of_dict = cls.from_json_string(json_string)
+            list_of_instances = []
+            for n in list_of_dict:
+                list_of_instances.append(cls.create(**n))
+            return list_of_instances
