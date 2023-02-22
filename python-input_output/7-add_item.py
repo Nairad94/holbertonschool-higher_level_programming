@@ -6,7 +6,7 @@ save_to_json_file = __import__('5-save_to_json_file').save_to_json_file
 load_from_json_file = __import__('6-load_from_json_file').load_from_json_file
 
 
-# Cargamos los elementos existentes desde el archivo si existe, o creamos una lista vacía
+# Cargamos los elementos existentes desde el archivo, o creamos una lista vacía
 try:
     items = load_from_json_file("add_item.json")
 except FileNotFoundError:
