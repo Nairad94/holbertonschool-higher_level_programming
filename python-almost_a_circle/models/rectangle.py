@@ -107,3 +107,13 @@ class Rectangle(Base):
             for key, value in kwargs.items():
                 setattr(self, key, value)
         # establece el valor de un atributo de un objeto en tiempo de ejecución
+
+    def to_dictionary(self):
+        """ dictionary with keys and values """
+        return {
+            "id": self.id,
+            "width": self.width,
+            "height": self.height,
+            "x": self.x,
+            "y": self.y
+            }
