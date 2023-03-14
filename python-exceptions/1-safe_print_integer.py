@@ -8,5 +8,5 @@ def safe_print_integer(value):
     except ValueError:
         return False
     else:
-        print ("{}".format(value))
+        print ("{:d}".format(value)) #"{:d}" is used to print integers
         return True
