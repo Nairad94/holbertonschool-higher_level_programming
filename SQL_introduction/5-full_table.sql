@@ -1,2 +1,2 @@
 -- prints the full descriptiom
-DESCRIBE first_table;
+SHOW COLUMNS FROM first_table;
