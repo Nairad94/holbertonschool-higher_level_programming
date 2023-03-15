@@ -1,2 +1,2 @@
--- create a datebase
-CREATE DATABASES IF NOT EXISTS hbtn_0c_0
+-- create a datebase if not exists
+CREATE DATABASES IF NOT EXISTS hbtn_0c_0;
