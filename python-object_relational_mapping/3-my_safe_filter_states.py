@@ -16,7 +16,8 @@ def lists_states():
 
     cursor = db.cursor()
     cursor.execute(
-        "SELECT * FROM states WHERE name LIKE BINARY '{}'".format(argv[4])
+        "SELECT * FROM states WHERE name LIKE BINARY %s".format(argv[4])
+    # %s is the technique parametrización de consultas to avoid sql injection
     )
     result = cursor.fetchall()
     for row in result:
