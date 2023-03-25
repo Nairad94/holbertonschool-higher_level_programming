@@ -3,9 +3,10 @@
 from sys import argv
 import MySQLdb
 
+
 def lists_states():
     """ lists all states from the detabase """
-    
+
     db = MySQLdb.connect(
         host="localhost",
         user=argv[1],
@@ -18,6 +19,7 @@ def lists_states():
     result = cursor.fetchall()
     for row in result:
         print(row)
+
 
 if __name__ == "__main__":
     lists_states()
