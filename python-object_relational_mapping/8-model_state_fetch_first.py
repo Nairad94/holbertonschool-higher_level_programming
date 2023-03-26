@@ -16,7 +16,10 @@ def lists_states():
     connection = engine.connect()
     result = connection.execute('SELECT * FROM states')
     first_elem = result.fetchone()
-    print(f"{first_elem[0]}: {first_elem[1]}")
+    if first_elem is None:
+        print('Nothing')
+    else:
+        print(f"{first_elem[0]}: {first_elem[1]}")
 
 
 if __name__ == '__main__':
