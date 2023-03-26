@@ -14,9 +14,9 @@ def lists_states():
         'mysql+mysqldb://{}:{}@localhost/{}'.format(user, password, db)
         )
     connection = engine.connect()
-    result = connection.execute('SELECT * FROM states LIMIT 1')
-    for elem in result:
-        print(f"{elem[0]}: {elem[1]}")
+    result = connection.execute('SELECT * FROM states')
+    first_elem = result.fetchone()
+    print(f"{first_elem[0]}: {first_elem[1]}")
 
 
 if __name__ == '__main__':
