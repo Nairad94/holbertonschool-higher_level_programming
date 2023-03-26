@@ -15,7 +15,7 @@ def lists_states():
         'mysql+mysqldb://{}:{}@localhost/{}'.format(user, password, db)
         )
     session = Session(engine)
-    states = session.query(State).filter(State.name.like('%a')).all()
+    states = session.query(State).filter(State.name.like('%a%')).all()
 
     for state in states:
         print(f"{state.id}: {state.name}")
