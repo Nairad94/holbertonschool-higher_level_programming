@@ -21,7 +21,7 @@ def lists_states():
     )
     result = cursor.fetchall()
     for row in result:
-            print(row)
+        print(row)
 
 
 if __name__ == "__main__":
